@@ -1,38 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import CoverPage from './pages/CoverPage';
-import HistoryOfComputers from './pages/HistoryOfComputers';
-import HistoryOfNumbers from './pages/HistoryOfNumbers';
-import BinarySystem from './pages/BinarySystem';
-import Algorithms from './pages/Algorithms';
-import ScratchBasics from './pages/ScratchBasics';
-import Functions from './pages/Functions';
+import ContentPage from './components/ContentPage';
+import lecturesData from './data/lectures.json';
 import './App.css';
 
 function App() {
   const [currentLecture, setCurrentLecture] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [pageContent, setPageContent] = useState(null);
 
-  const lectures = [
-    {
-      title: 'Lecture 1: Foundations',
-      pages: [
-        { component: <CoverPage key="cover" title="CS101: Introduction to Computer Science" />, title: 'Cover' },
-        { component: <HistoryOfNumbers key="history-numbers" title="History of Numbers" />, title: 'History of Numbers' },
-        { component: <HistoryOfComputers key="history-computers" title="History of Computers" />, title: 'History of Computers' },
-        { component: <BinarySystem key="binary-system" title="Binary System" />, title: 'Binary System' },
-        { component: <Algorithms key="algorithms" title="Algorithms: Problem Solving Step-by-Step" />, title: 'Algorithms' },
-        { component: <Functions key="functions" title="Functions: Reusable Building Blocks" />, title: 'Functions' },
-        { component: <ScratchBasics key="scratch-basics" title="Scratch Basics: Visual Programming" />, title: 'Scratch Basics' }
-      ]
-    },
-    {
-      title: 'Lecture 2: Programming Basics',
-      pages: []
-    }
-  ];
+  const lectures = useMemo(() => lecturesData.lectures, []);
 
   const handleSelectLecture = (lectureIndex) => {
     setCurrentLecture(lectureIndex);
@@ -63,6 +43,24 @@ function App() {
   const currentLectureData = lectures[currentLecture];
   const currentPageData = currentLectureData.pages[currentPage];
 
+  useEffect(() => {
+    const loadContent = async () => {
+      if (!currentPageData) return;
+      if (currentPageData.type === 'component') {
+        setPageContent(null);
+        return;
+      }
+      try {
+        const mod = await import(/* @vite-ignore */ `./data/pages/${currentPageData.contentFile}`);
+        setPageContent(mod.default || mod);
+      } catch (e) {
+        console.error('Failed to load page content', e);
+        setPageContent({ title: currentPageData.title, sections: [{ type: 'section', title: 'Error', content: [{ type: 'paragraph', text: 'Could not load content.' }] }] });
+      }
+    };
+    loadContent();
+  }, [currentLecture, currentPage]);
+
   return (
     <div className="App">
       <Sidebar
@@ -84,7 +82,18 @@ function App() {
           onToggleSidebar={toggleSidebar}
         />
         <main className="page-content">
-          {currentPageData.component}
+          {currentPageData.type === 'component' ? (
+            <CoverPage key="cover" title="CS101: Introduction to Computer Science" />
+          ) : pageContent ? (
+            <ContentPage
+              title={pageContent.title || currentPageData.title}
+              content={pageContent}
+              pageNumber={currentPage + 1}
+              totalPages={currentLectureData.pages.length}
+            />
+          ) : (
+            <div style={{ padding: 24 }}>Loading content...</div>
+          )}
         </main>
       </div>
     </div>

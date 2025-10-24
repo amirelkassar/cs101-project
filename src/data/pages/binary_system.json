@@ -1,0 +1,84 @@
+{
+  "title": "Binary System",
+  "sections": [
+    {
+      "type": "section",
+      "title": "Binary: The Language of Computers",
+      "content": [
+        { "type": "image", "imageKey": "binary_digits", "alt": "Binary digits", "caption": "Binary digits: only 0 and 1" },
+        { "type": "paragraph", "text": "Binary uses only two symbols: 0 and 1. These map naturally to electronic circuits that can be OFF (0) or ON (1)." },
+        { "type": "list", "ordered": false, "items": [
+          "0 represents OFF – no current",
+          "1 represents ON – current flowing"
+        ] }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "How Binary Works",
+      "content": [
+        { "type": "paragraph", "text": "Just like decimal uses powers of 10, binary uses powers of 2. Each position represents a power of 2." },
+        { "type": "example", "title": "Binary Place Values", "content": [
+          { "type": "code", "language": "text", "code": "Position:  8  4  2  1  (powers of 2)\nBinary:    1  0  1  1\nDecimal:   8+ 0+ 2+ 1 = 11" },
+          { "type": "paragraph", "text": "So binary 1011 equals decimal 11" }
+        ] },
+        { "type": "heading", "level": 3, "text": "Converting Decimal to Binary" },
+        { "type": "paragraph", "text": "To convert decimal to binary, repeatedly divide by 2 and track remainders:" },
+        { "type": "example", "title": "Convert 13 to Binary", "content": [
+          { "type": "code", "language": "text", "code": "13 ÷ 2 = 6 remainder 1\n 6 ÷ 2 = 3 remainder 0\n 3 ÷ 2 = 1 remainder 1\n 1 ÷ 2 = 0 remainder 1\n\nRead remainders bottom to top: 1101\nSo 13 in decimal = 1101 in binary" }
+        ] },
+        { "type": "heading", "level": 3, "text": "Binary Conversion Table" },
+        { "type": "table", "headers": ["Decimal", "Binary", "Name"], "rows": [
+          ["0", "0000", "Zero"], ["1", "0001", "One"], ["2", "0010", "Two"], ["3", "0011", "Three"],
+          ["4", "0100", "Four"], ["5", "0101", "Five"], ["6", "0110", "Six"], ["7", "0111", "Seven"],
+          ["8", "1000", "Eight"], ["9", "1001", "Nine"], ["10", "1010", "Ten"], ["11", "1011", "Eleven"],
+          ["12", "1100", "Twelve"], ["13", "1101", "Thirteen"], ["14", "1110", "Fourteen"], ["15", "1111", "Fifteen"]
+        ] }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Bits and Bytes",
+      "content": [
+        { "type": "image", "imageKey": "bit_byte", "alt": "Bit and byte visualization", "caption": "A bit is a single binary digit; a byte is 8 bits" },
+        { "type": "paragraph", "text": "A bit is a single 0 or 1. A byte is 8 bits. One byte can represent 2^8 = 256 different values (0–255)." },
+        { "type": "list", "ordered": false, "items": [
+          "ASCII characters fit in one byte (0–127)",
+          "RGB color values use 0–255 for each color",
+          "Many programming languages have byte data types"
+        ] },
+        { "type": "example", "title": "Byte Examples", "content": [
+          { "type": "code", "language": "text", "code": "1 byte = 8 bits\nExamples:\n00000000 = 0 in decimal\n11111111 = 255 in decimal\n01000001 = 65 in decimal (ASCII 'A')" }
+        ] }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Logic Gates and Boolean Operations",
+      "content": [
+        { "type": "image", "imageKey": "logic_gates", "alt": "Logic gates diagram", "caption": "Basic logic gates: AND, OR, and NOT operations" },
+        { "type": "paragraph", "text": "Computers perform operations using logic gates that work with binary values:" },
+        { "type": "list", "ordered": false, "items": [
+          "AND: Output is 1 only if both inputs are 1",
+          "OR: Output is 1 if at least one input is 1",
+          "NOT: Output is opposite of input (0→1, 1→0)",
+          "XOR: Output is 1 if inputs are different"
+        ] },
+        { "type": "heading", "level": 3, "text": "Boolean Logic Truth Table" },
+        { "type": "table", "headers": ["A", "B", "AND", "OR", "XOR"], "rows": [
+          ["0", "0", "0", "0", "0"], ["0", "1", "0", "1", "1"], ["1", "0", "0", "1", "1"], ["1", "1", "1", "1", "0"]
+        ] }
+      ]
+    },
+    {
+      "type": "keypoints",
+      "points": [
+        "Binary uses only 0 and 1, matching electronic circuits (OFF/ON)",
+        "Each position represents a power of 2 (1, 2, 4, 8, 16, ...)",
+        "A bit is one binary digit; a byte is 8 bits (256 possible values)",
+        "Logic gates perform Boolean operations on binary data",
+        "All computer data - numbers, text, images - is stored in binary"
+      ]
+    }
+  ]
+}

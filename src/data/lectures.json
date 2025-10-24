@@ -1,0 +1,20 @@
+{
+  "lectures": [
+    {
+      "title": "Lecture 1: Foundations",
+      "pages": [
+        { "id": "cover", "title": "Cover", "type": "component" },
+        { "id": "history_of_numbers", "title": "History of Numbers", "contentFile": "history_of_numbers.json" },
+        { "id": "history_of_computers", "title": "History of Computers", "contentFile": "history_of_computers.json" },
+        { "id": "binary_system", "title": "Binary System", "contentFile": "binary_system.json" },
+        { "id": "algorithms", "title": "Algorithms", "contentFile": "algorithms.json" },
+        { "id": "functions", "title": "Functions", "contentFile": "functions.json" },
+        { "id": "scratch_basics", "title": "Scratch Basics", "contentFile": "scratch_basics.json" }
+      ]
+    },
+    {
+      "title": "Lecture 2: Programming Basics",
+      "pages": []
+    }
+  ]
+}
