@@ -5,6 +5,7 @@ import analyticalEngineImg from '../assets/images/analytical_engine.png';
 import eniacImg from '../assets/images/eniac.png';
 import transistorImg from '../assets/images/transistor_computer.png';
 import microprocessorImg from '../assets/images/microprocessor.png';
+import ipoDiagramImg from '../assets/images/ipo_diagram.png';
 
 const HistoryOfComputers = () => {
   return (
@@ -101,6 +102,32 @@ const HistoryOfComputers = () => {
           in the 1970s led to personal computers. Today's smartphones have more computing power 
           than the room-sized computers of the 1940s.
         </p>
+      </Section>
+
+      <Section title="Computing Operations: Input → Processing → Output">
+        <ImageFigure 
+          src={ipoDiagramImg} 
+          alt="Input-Processing-Output diagram" 
+          caption="The IPO model: input → processing → output"
+        />
+        <p>
+          <strong>Old definition:</strong> In early computing, an "operation" meant a basic arithmetic or 
+          tabulation step carried out by people or electromechanical devices. Each operation was a 
+          single manual/mechanical action like adding, subtracting, or moving values on a register.
+        </p>
+        <p>
+          <strong>Current definition:</strong> In modern computing, an operation is any transformation a computer 
+          performs on data under program control — arithmetic, logic, data movement, storage, and retrieval. 
+          Operations are executed as CPU instructions, orchestrated by algorithms.
+        </p>
+        <p>
+          These operations are best understood through the IPO concept:
+        </p>
+        <ul>
+          <li><strong>Input:</strong> Data enters the system (keyboard, sensors, files, network).</li>
+          <li><strong>Processing:</strong> The CPU executes instructions to transform the input using algorithms.</li>
+          <li><strong>Output:</strong> The results are presented or stored (screen, sound, files, databases).</li>
+        </ul>
       </Section>
 
       <KeyPoints points={[

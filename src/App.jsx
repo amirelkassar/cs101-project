@@ -20,12 +20,12 @@ function App() {
       title: 'Lecture 1: Foundations',
       pages: [
         { component: <CoverPage key="cover" title="CS101: Introduction to Computer Science" />, title: 'Cover' },
-        { component: <HistoryOfComputers key="history-computers" title="History of Computers" />, title: 'History of Computers' },
         { component: <HistoryOfNumbers key="history-numbers" title="History of Numbers" />, title: 'History of Numbers' },
+        { component: <HistoryOfComputers key="history-computers" title="History of Computers" />, title: 'History of Computers' },
         { component: <BinarySystem key="binary-system" title="Binary System" />, title: 'Binary System' },
         { component: <Algorithms key="algorithms" title="Algorithms: Problem Solving Step-by-Step" />, title: 'Algorithms' },
-        { component: <ScratchBasics key="scratch-basics" title="Scratch Basics: Visual Programming" />, title: 'Scratch Basics' },
-        { component: <Functions key="functions" title="Functions: Reusable Building Blocks" />, title: 'Functions' }
+        { component: <Functions key="functions" title="Functions: Reusable Building Blocks" />, title: 'Functions' },
+        { component: <ScratchBasics key="scratch-basics" title="Scratch Basics: Visual Programming" />, title: 'Scratch Basics' }
       ]
     },
     {
