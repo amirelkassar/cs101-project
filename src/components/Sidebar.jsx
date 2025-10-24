@@ -1,17 +1,41 @@
-import React from 'react';
-import { BookOpen, Home, History, Binary, Calculator } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, Home, History, Binary, Calculator, Layers, ChevronDown, ChevronRight, Sigma, Puzzle, FunctionSquare } from 'lucide-react';
 import './Sidebar.css';
 
-const Sidebar = ({ currentPage, onPageChange, pages }) => {
-  const navigationItems = [
-    { id: 0, title: 'Cover', icon: Home, component: 'CoverPage' },
-    { id: 1, title: 'History of Computers', icon: History, component: 'HistoryOfComputers' },
-    { id: 2, title: 'History of Numbers', icon: Calculator, component: 'HistoryOfNumbers' },
-    { id: 3, title: 'Binary System', icon: Binary, component: 'BinarySystem' }
-  ];
+const Sidebar = ({ lectures, currentLecture, currentPage, onSelectLecture, onSelectPage, isOpen }) => {
+  const [openLectures, setOpenLectures] = useState(() => {
+    const initial = {};
+    lectures.forEach((_, idx) => { initial[idx] = idx === 0; });
+    return initial;
+  });
+
+  const toggleLecture = (index) => {
+    setOpenLectures((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
+  const iconForTitle = (title) => {
+    switch (title) {
+      case 'Cover':
+        return <Home size={18} />;
+      case 'History of Computers':
+        return <History size={18} />;
+      case 'History of Numbers':
+        return <Calculator size={18} />;
+      case 'Binary System':
+        return <Binary size={18} />;
+      case 'Algorithms':
+        return <Sigma size={18} />;
+      case 'Scratch Basics':
+        return <Puzzle size={18} />;
+      case 'Functions':
+        return <FunctionSquare size={18} />;
+      default:
+        return <BookOpen size={18} />;
+    }
+  };
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-header">
         <div className="course-icon">
           <BookOpen size={32} />
@@ -25,37 +49,55 @@ const Sidebar = ({ currentPage, onPageChange, pages }) => {
       <nav className="sidebar-nav">
         <h3 className="nav-title">Course Content</h3>
         <ul className="nav-list">
-          {navigationItems.map((item) => {
-            const IconComponent = item.icon;
-            return (
-              <li key={item.id} className="nav-item">
-                <button
-                  className={`nav-button ${currentPage === item.id ? 'active' : ''}`}
-                  onClick={() => onPageChange(item.id)}
-                >
-                  <div className="nav-icon">
-                    <IconComponent size={20} />
-                  </div>
-                  <span className="nav-text">{item.title}</span>
-                  <div className="nav-indicator">
-                    {currentPage === item.id && <div className="active-dot"></div>}
-                  </div>
-                </button>
-              </li>
-            );
-          })}
+          {lectures.map((lecture, lIndex) => (
+            <li key={lecture.title} className="lecture-group">
+              <button
+                className={`lecture-header ${currentLecture === lIndex ? 'active' : ''}`}
+                onClick={() => toggleLecture(lIndex)}
+              >
+                <div className="nav-icon">
+                  <Layers size={18} />
+                </div>
+                <span className="nav-text">{lecture.title}</span>
+                <div className="nav-indicator">
+                  {openLectures[lIndex] ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                </div>
+              </button>
+
+              {openLectures[lIndex] && (
+                <ul className="lecture-pages">
+                  {lecture.pages.map((page, pIndex) => (
+                    <li key={`${lecture.title}-${page.title}`} className="nav-item">
+                      <button
+                        className={`nav-button ${currentLecture === lIndex && currentPage === pIndex ? 'active' : ''}`}
+                        onClick={() => onSelectPage(lIndex, pIndex)}
+                      >
+                        <div className="nav-icon">
+                          {iconForTitle(page.title)}
+                        </div>
+                        <span className="nav-text">{page.title}</span>
+                        <div className="nav-indicator">
+                          {currentLecture === lIndex && currentPage === pIndex && <div className="active-dot"></div>}
+                        </div>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
         </ul>
       </nav>
 
       <div className="sidebar-footer">
         <div className="progress-info">
           <span className="progress-text">
-            Page {currentPage + 1} of {pages.length}
+            Lecture {currentLecture + 1} of {lectures.length} • Page {currentPage + 1} of {lectures[currentLecture].pages.length}
           </span>
           <div className="progress-bar">
             <div 
               className="progress-fill" 
-              style={{ width: `${((currentPage + 1) / pages.length) * 100}%` }}
+              style={{ width: `${((currentPage + 1) / lectures[currentLecture].pages.length) * 100}%` }}
             ></div>
           </div>
         </div>

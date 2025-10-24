@@ -74,6 +74,43 @@
   margin: 0;
 }
 
+.lecture-group {
+  margin-bottom: 0.5rem;
+}
+
+.lecture-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  color: #e2e8f0;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  font-size: 0.9rem;
+  border-left: 3px solid transparent;
+}
+
+.lecture-header:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lecture-header.active {
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.18) 0%, rgba(59, 130, 246, 0.05) 100%);
+  color: #60a5fa;
+  border-left-color: #3b82f6;
+}
+
+.lecture-pages {
+  list-style: none;
+  padding: 0.25rem 0 0.5rem 0.75rem;
+  margin: 0;
+  border-left: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
 .nav-item {
   margin-bottom: 0.25rem;
 }
@@ -82,7 +119,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.25rem;
   background: none;
   border: none;
   color: #e2e8f0;
@@ -90,7 +127,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .nav-button:hover {
@@ -105,7 +142,7 @@
 }
 
 .nav-icon {
-  margin-right: 0.75rem;
+  margin-right: 0.6rem;
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -117,8 +154,8 @@
 }
 
 .nav-indicator {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   display: flex;
   align-items: center;
   justify-content: center;

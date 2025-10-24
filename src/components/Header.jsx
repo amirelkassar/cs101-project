@@ -8,6 +8,7 @@ const Header = ({
   onPrevPage, 
   onNextPage, 
   pageTitle,
+  lectureTitle,
   onToggleSidebar 
 }) => {
   return (
@@ -21,7 +22,11 @@ const Header = ({
           <Menu size={20} />
         </button>
         <div className="page-info">
-          <h2 className="page-title">{pageTitle}</h2>
+          <div className="breadcrumb">
+            <span className="lecture-title">{lectureTitle}</span>
+            <span className="breadcrumb-sep">›</span>
+            <h2 className="page-title">{pageTitle}</h2>
+          </div>
           <span className="page-counter">
             {currentPage + 1} / {totalPages}
           </span>

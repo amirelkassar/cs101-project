@@ -45,6 +45,22 @@
   gap: 1rem;
 }
 
+.breadcrumb {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.lecture-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.breadcrumb-sep {
+  color: #94a3b8;
+}
+
 .page-title {
   font-size: 1.25rem;
   font-weight: 600;

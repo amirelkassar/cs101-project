@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Code, Cpu, Lightbulb } from 'lucide-react';
+import { BookOpen, Code, Cpu, Lightbulb, Sigma, Braces } from 'lucide-react';
 import './CoverPage.css';
 
 const CoverPage = ({ title = "CS101: Introduction to Computer Science" }) => {
@@ -9,26 +9,26 @@ const CoverPage = ({ title = "CS101: Introduction to Computer Science" }) => {
         <div className="cover-header">
           <BookOpen className="cover-icon" size={64} />
           <h1 className="cover-title">{title}</h1>
-          <p className="cover-subtitle">A Comprehensive Guide to Computing Fundamentals</p>
+          <p className="cover-subtitle">Foundations of Computer Science: Math, Logic, and Programming</p>
         </div>
         
         <div className="cover-features">
           <div className="feature-item">
-            <Code className="feature-icon" />
-            <h3>Programming Concepts</h3>
-            <p>Learn the basics of algorithms and problem-solving</p>
+            <Braces className="feature-icon" />
+            <h3>Programming Languages</h3>
+            <p>Learn with Scratch first, then explore Python</p>
+          </div>
+          
+          <div className="feature-item">
+            <Sigma className="feature-icon" />
+            <h3>Discrete Mathematics</h3>
+            <p>Sets, logic, number systems, and combinatorics</p>
           </div>
           
           <div className="feature-item">
             <Cpu className="feature-icon" />
             <h3>Computer Systems</h3>
-            <p>Understand how computers work from the ground up</p>
-          </div>
-          
-          <div className="feature-item">
-            <Lightbulb className="feature-icon" />
-            <h3>Practical Examples</h3>
-            <p>Hands-on learning with real-world applications</p>
+            <p>Binary, data representation, gates, and architecture</p>
           </div>
         </div>
         
@@ -42,14 +42,17 @@ const CoverPage = ({ title = "CS101: Introduction to Computer Science" }) => {
             <span className="topic-tag">Algorithms</span>
             <span className="topic-tag">Problem Solving</span>
             <span className="topic-tag">Scratch Programming</span>
+            <span className="topic-tag">Python Basics</span>
+            <span className="topic-tag">Logic & Sets</span>
             <span className="topic-tag">Functions</span>
+            <span className="topic-tag">Data Structures</span>
           </div>
         </div>
         
         <div className="cover-footer">
           <p>Interactive Learning Experience</p>
           <div className="navigation-hint">
-            <span>Use arrow keys or navigation buttons to explore</span>
+            <span>Select a lecture, then choose pages to explore</span>
           </div>
         </div>
       </div>
