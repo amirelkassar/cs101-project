@@ -9,7 +9,8 @@
         { "id": "binary_system", "title": "Binary System", "contentFile": "binary_system.json" },
         { "id": "algorithms", "title": "Algorithms", "contentFile": "algorithms.json" },
         { "id": "functions", "title": "Functions", "contentFile": "functions.json" },
-        { "id": "scratch_basics", "title": "Scratch Basics", "contentFile": "scratch_basics.json" }
+        { "id": "scratch_basics", "title": "Scratch Basics", "contentFile": "scratch_basics.json" },
+        { "id": "scratch_assignments", "title": "Scratch Assignments", "contentFile": "scratch_assignments.json" }
       ]
     },
     {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Code, Cpu, Lightbulb, Sigma, Braces } from 'lucide-react';
+import { BookOpen, Code, Cpu, Lightbulb, Sigma, Braces, Mail, Phone, Github, Linkedin, Facebook } from 'lucide-react';
 import './CoverPage.css';
 
 const CoverPage = ({ title = "CS101: Introduction to Computer Science" }) => {
@@ -46,6 +46,32 @@ const CoverPage = ({ title = "CS101: Introduction to Computer Science" }) => {
             <span className="topic-tag">Logic & Sets</span>
             <span className="topic-tag">Functions</span>
             <span className="topic-tag">Data Structures</span>
+          </div>
+        </div>
+        
+        <div className="author-section">
+          <h3 className="author-title">Author & Contact</h3>
+          <div className="author-grid">
+            <a className="author-item" href="mailto:amir.elkassar@gmail.com" target="_blank" rel="noopener noreferrer">
+              <div className="author-icon"><Mail size={18} /></div>
+              <span className="author-link">amir.elkassar@gmail.com</span>
+            </a>
+            <a className="author-item" href="tel:+201120797422">
+              <div className="author-icon"><Phone size={18} /></div>
+              <span className="author-link">+201120797422</span>
+            </a>
+            <a className="author-item" href="https://www.facebook.com/amiralielkassar/" target="_blank" rel="noopener noreferrer">
+              <div className="author-icon"><Facebook size={18} /></div>
+              <span className="author-link">facebook.com/amiralielkassar</span>
+            </a>
+            <a className="author-item" href="https://github.com/amirelkassar" target="_blank" rel="noopener noreferrer">
+              <div className="author-icon"><Github size={18} /></div>
+              <span className="author-link">github.com/amirelkassar</span>
+            </a>
+            <a className="author-item" href="https://www.linkedin.com/in/amir-elkassar-a60089171/" target="_blank" rel="noopener noreferrer">
+              <div className="author-icon"><Linkedin size={18} /></div>
+              <span className="author-link">linkedin.com/in/amir-elkassar-a60089171</span>
+            </a>
           </div>
         </div>
         

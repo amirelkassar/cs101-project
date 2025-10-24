@@ -54,9 +54,16 @@ export const CodeBlock = ({ children, language = 'text' }) => (
   </div>
 );
 
-export const ImageFigure = ({ src, alt, caption }) => (
+export const ImageFigure = ({ src, alt, caption, scalePercent = 100, optimized = false }) => (
   <figure className="image-figure">
-    <img src={src} alt={alt} />
+    <img 
+      src={src} 
+      alt={alt} 
+      style={{ width: `${scalePercent}%` }} 
+      loading={optimized ? 'lazy' : undefined} 
+      decoding={optimized ? 'async' : undefined} 
+      fetchpriority={optimized ? 'low' : undefined}
+    />
     {caption && <figcaption>{caption}</figcaption>}
   </figure>
 );

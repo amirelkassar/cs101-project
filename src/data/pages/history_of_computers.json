@@ -5,51 +5,230 @@
       "type": "section",
       "title": "What is a Computer?",
       "content": [
-        { "type": "paragraph", "text": "The word \"computer\" originally referred to a person who performed calculations. Before electronic machines, human computers were employed to solve complex mathematical problems, especially during wartime for calculating artillery trajectories and breaking enemy codes." },
-        { "type": "paragraph", "text": "Today, we define a computer as an electronic device that can store, retrieve, and process data according to a set of instructions called a program." }
+        {
+          "type": "paragraph",
+          "text": "The word \"computer\" originally referred to a person who performed calculations. Before electronic machines, human computers were employed to solve complex mathematical problems, especially during wartime for calculating artillery trajectories and breaking enemy codes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Today, we define a computer as an electronic device that can store, retrieve, and process data according to a set of instructions called a program."
+        }
       ]
     },
     {
       "type": "section",
       "title": "Evolution of Computing Devices",
       "content": [
-        { "type": "heading", "level": 3, "text": "1. Ancient Calculating Tools (3000 BC - 1600 AD)" },
-        { "type": "image", "imageKey": "abacus", "alt": "Ancient abacus", "caption": "The abacus: one of the earliest calculating devices, still used today" },
-        { "type": "paragraph", "text": "The journey began with simple counting tools like the abacus, invented around 3000 BC. These mechanical devices helped humans perform basic arithmetic operations much faster than mental calculation alone." },
-
-        { "type": "heading", "level": 3, "text": "2. Mechanical Computers (1600s - 1800s)" },
-        { "type": "image", "imageKey": "analytical_engine", "alt": "Analytical Engine schematic", "caption": "Charles Babbage's Analytical Engine - the first design for a general-purpose computer" },
-        { "type": "paragraph", "text": "Charles Babbage designed the Analytical Engine in the 1830s, which is considered the first design for a general-purpose computer. It included all the basic elements of a modern computer: input devices, memory, a central processing unit, and output devices." },
-
-        { "type": "heading", "level": 3, "text": "3. Electromechanical Era (1930s - 1940s)" },
-        { "type": "paragraph", "text": "The 1930s saw the development of electromechanical computers that used electrical switches and mechanical relays. These machines could perform calculations much faster than purely mechanical devices." },
-
-        { "type": "heading", "level": 3, "text": "4. Electronic Computers (1940s - 1950s)" },
-        { "type": "image", "imageKey": "eniac", "alt": "ENIAC computer", "caption": "ENIAC (1946) - one of the first general-purpose electronic computers" },
-        { "type": "paragraph", "text": "ENIAC (Electronic Numerical Integrator and Computer), completed in 1946, was one of the first general-purpose electronic computers. It weighed 30 tons, occupied 1,800 square feet, and used 18,000 vacuum tubes." },
-
-        { "type": "heading", "level": 3, "text": "5. Transistor Revolution (1950s - 1960s)" },
-        { "type": "image", "imageKey": "transistor_computer", "alt": "Transistor symbol", "caption": "The transistor replaced vacuum tubes, making computers smaller and more reliable" },
-        { "type": "paragraph", "text": "The invention of the transistor in 1947 revolutionized computing. Transistors were smaller, more reliable, and consumed less power than vacuum tubes, leading to the second generation of computers." },
-
-        { "type": "heading", "level": 3, "text": "6. Integrated Circuits and Microprocessors (1960s - Present)" },
-        { "type": "image", "imageKey": "microprocessor", "alt": "Microprocessor chip", "caption": "Modern microprocessors contain billions of transistors on a single chip" },
-        { "type": "paragraph", "text": "The development of integrated circuits (microchips) in the 1960s and microprocessors in the 1970s led to personal computers. Today's smartphones have more computing power than the room-sized computers of the 1940s." }
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "1. Ancient Calculating Tools (3000 BC - 1600 AD)"
+        },
+        {
+          "type": "image",
+          "imageKey": "abacus",
+          "alt": "Ancient abacus",
+          "caption": "The abacus: one of the earliest calculating devices, still used today"
+        },
+        {
+          "type": "paragraph",
+          "text": "The journey began with simple counting tools like the abacus, invented around 3000 BC. These mechanical devices helped humans perform basic arithmetic operations much faster than mental calculation alone."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Astrolabe (Ancient Astronomical Instrument)"
+        },
+        {
+          "type": "image",
+          "url": "https://images.saymedia-content.com/.image/t_share/MTc0MjA4NjIwODA2ODA5NDY4/history-of-the-astrolabe-and-how-to-make-one.png",
+          "alt": "Astrolabe diagram",
+          "caption": "Astrolabe: astronomical measurement and navigation tool",
+          "optimized": true,
+          "scalePercent": 70
+        },
+        {
+          "type": "paragraph",
+          "text": "The astrolabe is a historical instrument used for solving problems related to time and the position of the stars. Widely used by astronomers and navigators from antiquity through the Renaissance, it enabled calculations such as determining local time from the Sun’s position, measuring stellar altitude, and aiding sea navigation. As a mechanical analog computer, it demonstrates how physical devices were used to perform computations long before modern electronic machines."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "2. Mechanical Computers (1600s - 1800s)"
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Blaise Pascal’s Pascaline (1642)"
+        },
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Pascaline-CnAM_823-1-IMG_1506-black.jpg",
+          "alt": "Pascaline mechanical calculator",
+          "caption": "Pascaline: geared calculator for addition and subtraction",
+          "optimized": true,
+          "scalePercent": 70
+        },
+        {
+          "type": "paragraph",
+          "text": "In 1642, Blaise Pascal, a French mathematician and philosopher, invented one of the first mechanical calculators, known as the Pascaline. He designed it to help his father, a tax collector, perform arithmetic calculations more efficiently. The Pascaline used interlocking gears and dials to add and subtract numbers directly, with each gear representing a decimal place and carrying over to the next — similar to modern mechanical counters."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Gottfried Wilhelm Leibniz’s Stepped Reckoner (1673)"
+        },
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/Gmg988NW4AEK2Ot.jpg:large",
+          "alt": "Leibniz Stepped Reckoner",
+          "caption": "Stepped Reckoner: operations via the Leibniz Wheel (stepped drum)",
+          "optimized": true,
+          "scalePercent": 70
+        },
+        {
+          "type": "paragraph",
+          "text": "A few decades later, Gottfried Wilhelm Leibniz improved upon Pascal’s design by inventing the Stepped Reckoner (1673). Using a stepped drum (the Leibniz Wheel), it performed addition, subtraction, multiplication, and division through repeated addition and subtraction. This introduced the idea of a mechanical algorithm — a fixed sequence of operations performing complex calculations automatically."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Charles Babbage’s Difference Engine (1822)"
+        },
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Babbage_Difference_Engine.jpg",
+          "alt": "Babbage Difference Engine",
+          "caption": "Difference Engine: automatic table calculation using finite differences",
+          "optimized": true,
+          "scalePercent": 70
+        },
+        {
+          "type": "paragraph",
+          "text": "In the early 19th century, Charles Babbage proposed the Difference Engine, a massive mechanical calculator designed to compute and print mathematical tables automatically using the method of finite differences. Intended to eliminate human error in hand-computed tables, it was only partially built due to funding and manufacturing limitations."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Charles Babbage’s Analytical Engine (1837)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Building on his earlier work, Babbage designed the Analytical Engine in 1837 — considered the first true concept of a modern computer — and intended to be fully programmable using punched cards."
+        },
+        {
+          "type": "image",
+          "url": "https://informationq.com/wp-content/uploads/2016/12/Analytical-Engine-The-first-mechanical-computerCharles-Babbage.jpg",
+          "alt": "Analytical Engine schematic",
+          "caption": "Charles Babbage's Analytical Engine - the first design for a general-purpose computer",
+          "optimized": true,
+          "scalePercent": 70
+        },
+        {
+          "type": "paragraph",
+          "text": "Charles Babbage designed the Analytical Engine in the 1830s, which is considered the first design for a general-purpose computer. It included all the basic elements of a modern computer: input devices, memory, a central processing unit, and output devices."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The Mill (equivalent to the CPU)",
+            "The Store (similar to memory or RAM)",
+            "The Reader (input via punched cards)",
+            "The Printer (output device)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "It could perform basic arithmetic, follow conditional logic, and loop instructions — the same logical structure used in computers today. Although never completed, the Analytical Engine’s design directly influenced later pioneers and laid the theoretical foundation for general-purpose computing."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "3. Electromechanical Era (1930s - 1940s)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The 1930s saw the development of electromechanical computers that used electrical switches and mechanical relays. These machines could perform calculations much faster than purely mechanical devices."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "4. Electronic Computers (1940s - 1950s)"
+        },
+        {
+          "type": "image",
+          "imageKey": "eniac",
+          "alt": "ENIAC computer",
+          "caption": "ENIAC (1946) - one of the first general-purpose electronic computers"
+        },
+        {
+          "type": "paragraph",
+          "text": "ENIAC (Electronic Numerical Integrator and Computer), completed in 1946, was one of the first general-purpose electronic computers. It weighed 30 tons, occupied 1,800 square feet, and used 18,000 vacuum tubes."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "5. Transistor Revolution (1950s - 1960s)"
+        },
+        {
+          "type": "image",
+          "imageKey": "transistor_computer",
+          "alt": "Transistor symbol",
+          "caption": "The transistor replaced vacuum tubes, making computers smaller and more reliable"
+        },
+        {
+          "type": "paragraph",
+          "text": "The invention of the transistor in 1947 revolutionized computing. Transistors were smaller, more reliable, and consumed less power than vacuum tubes, leading to the second generation of computers."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "6. Integrated Circuits and Microprocessors (1960s - Present)"
+        },
+        {
+          "type": "image",
+          "imageKey": "microprocessor",
+          "alt": "Microprocessor chip",
+          "caption": "Modern microprocessors contain billions of transistors on a single chip"
+        },
+        {
+          "type": "paragraph",
+          "text": "The development of integrated circuits (microchips) in the 1960s and microprocessors in the 1970s led to personal computers. Today's smartphones have more computing power than the room-sized computers of the 1940s."
+        }
       ]
     },
     {
       "type": "section",
       "title": "Computing Operations: Input → Processing → Output",
       "content": [
-        { "type": "image", "imageKey": "ipo_diagram", "alt": "Input-Processing-Output diagram", "caption": "The IPO model: input → processing → output" },
-        { "type": "paragraph", "text": "Old definition: In early computing, an 'operation' meant a basic arithmetic or tabulation step carried out by people or electromechanical devices. Each operation was a single manual/mechanical action like adding, subtracting, or moving values on a register." },
-        { "type": "paragraph", "text": "Current definition: In modern computing, an operation is any transformation a computer performs on data under program control — arithmetic, logic, data movement, storage, and retrieval. Operations are executed as CPU instructions, orchestrated by algorithms." },
-        { "type": "paragraph", "text": "These operations are best understood through the IPO concept:" },
-        { "type": "list", "ordered": false, "items": [
-          "Input: Data enters the system (keyboard, sensors, files, network).",
-          "Processing: The CPU executes instructions to transform the input using algorithms.",
-          "Output: The results are presented or stored (screen, sound, files, databases)."
-        ] }
+        {
+          "type": "image",
+          "imageKey": "ipo_diagram",
+          "alt": "Input-Processing-Output diagram",
+          "caption": "The IPO model: input → processing → output"
+        },
+        {
+          "type": "paragraph",
+          "text": "Old definition: In early computing, an 'operation' meant a basic arithmetic or tabulation step carried out by people or electromechanical devices. Each operation was a single manual/mechanical action like adding, subtracting, or moving values on a register."
+        },
+        {
+          "type": "paragraph",
+          "text": "Current definition: In modern computing, an operation is any transformation a computer performs on data under program control — arithmetic, logic, data movement, storage, and retrieval. Operations are executed as CPU instructions, orchestrated by algorithms."
+        },
+        {
+          "type": "paragraph",
+          "text": "These operations are best understood through the IPO concept:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Input: Data enters the system (keyboard, sensors, files, network).",
+            "Processing: The CPU executes instructions to transform the input using algorithms.",
+            "Output: The results are presented or stored (screen, sound, files, databases)."
+          ]
+        }
       ]
     },
     {
@@ -66,9 +245,18 @@
       "type": "example",
       "title": "Computing Power Comparison",
       "content": [
-        { "type": "paragraph", "text": "ENIAC (1946): 5,000 operations per second, 30 tons, room-sized" },
-        { "type": "paragraph", "text": "Modern smartphone: Billions of operations per second, 200 grams, pocket-sized" },
-        { "type": "paragraph", "text": "Your phone is literally millions of times more powerful than the computers that helped win World War II!" }
+        {
+          "type": "paragraph",
+          "text": "ENIAC (1946): 5,000 operations per second, 30 tons, room-sized"
+        },
+        {
+          "type": "paragraph",
+          "text": "Modern smartphone: Billions of operations per second, 200 grams, pocket-sized"
+        },
+        {
+          "type": "paragraph",
+          "text": "Your phone is literally millions of times more powerful than the computers that helped win World War II!"
+        }
       ]
     }
   ]
