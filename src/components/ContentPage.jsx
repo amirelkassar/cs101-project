@@ -77,6 +77,38 @@ const renderElement = (el) => {
           ))}
         </Example>
       );
+    // New element types
+    case 'quote':
+      return (
+        <blockquote className="quote">
+          <p>{el.text}</p>
+          {el.attribution && <cite>— {el.attribution}</cite>}
+        </blockquote>
+      );
+    case 'callout':
+      return (
+        <div className={`callout ${el.style || 'info'}`}>
+          {el.title && <strong>{el.title}</strong>}
+          {el.text && <p>{el.text}</p>}
+        </div>
+      );
+    case 'video':
+      return (
+        <video controls src={el.src} poster={el.poster} style={{ width: '100%' }} />
+      );
+    case 'iframe':
+      return (
+        <div className="embed">
+          <iframe
+            src={el.src}
+            title={el.title || 'embed'}
+            width="100%"
+            height={el.height || 360}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      );
     default:
       return null;
   }

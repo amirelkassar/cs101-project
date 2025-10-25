@@ -1,47 +1,44 @@
 {
+  "id": "functions",
+  "slug": "functions",
   "title": "Functions: Reusable Building Blocks",
+  "tags": ["functions", "python", "design"],
+  "estimatedTime": 12,
   "sections": [
     {
       "type": "section",
       "title": "What is a Function?",
       "content": [
-        {
-          "type": "paragraph",
-          "text": "A function is a named block of code that performs a specific task. It helps us avoid repetition and organize logic into reusable pieces."
-        }
+        { "type": "paragraph", "text": "A function is a named block of code that performs a specific task. It helps us avoid repetition and organize logic into reusable pieces." }
       ]
     },
     {
       "type": "section",
       "title": "Example: Add Two Numbers",
       "content": [
-        {
-          "type": "example",
-          "title": "Python",
-          "content": [
-            {
-              "type": "code",
-              "language": "python",
-              "code": "def add(a, b):\n    return a + b\n\nresult = add(3, 5)\nprint(result)  # 8"
-            }
-          ]
-        }
+        { "type": "example", "title": "Python", "content": [
+          { "type": "code", "language": "python", "code": "def add(a, b):\n    return a + b\n\nresult = add(3, 5)\nprint(result)  # 8" }
+        ]}
       ]
     },
     {
       "type": "section",
       "title": "Design Tips",
       "content": [
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Use clear, descriptive names",
-            "Keep functions small and focused",
-            "Document inputs and outputs",
-            "Avoid side effects where possible"
-          ]
-        }
+        { "type": "list", "ordered": false, "items": [
+          "Use clear, descriptive names",
+          "Keep functions small and focused",
+          "Document inputs and outputs",
+          "Avoid side effects where possible"
+        ]}
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Watch: Functions in Python",
+      "content": [
+        { "type": "iframe", "title": "Functions Overview", "src": "https://www.youtube.com/embed/8DvywoWv6fI", "height": 360 },
+        { "type": "callout", "style": "success", "title": "Practice", "text": "Refactor repeated logic into functions during exercises." }
       ]
     }
   ]

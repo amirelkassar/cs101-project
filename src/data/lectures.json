@@ -1,20 +1,30 @@
 {
   "lectures": [
     {
+      "id": "lec1",
+      "slug": "foundations",
       "title": "Lecture 1: Foundations",
+      "description": "Foundations of Computer Science: history, numbers, binary, algorithms, and programming",
+      "tags": ["history", "numbers", "binary", "algorithms", "programming"],
+      "estimatedDuration": 90,
       "pages": [
-        { "id": "cover", "title": "Cover", "type": "component" },
-        { "id": "history_of_numbers", "title": "History of Numbers", "contentFile": "history_of_numbers.json" },
-        { "id": "history_of_computers", "title": "History of Computers", "contentFile": "history_of_computers.json" },
-        { "id": "binary_system", "title": "Binary System", "contentFile": "binary_system.json" },
-        { "id": "algorithms", "title": "Algorithms", "contentFile": "algorithms.json" },
-        { "id": "functions", "title": "Functions", "contentFile": "functions.json" },
-        { "id": "scratch_basics", "title": "Scratch Basics", "contentFile": "scratch_basics.json" },
-        { "id": "scratch_assignments", "title": "Scratch Assignments", "contentFile": "scratch_assignments.json" }
+        { "id": "cover", "slug": "cover", "title": "Cover", "type": "component", "summary": "Course cover and overview" },
+        { "id": "history_of_numbers", "slug": "history-of-numbers", "title": "History of Numbers", "contentFile": "history_of_numbers.json", "summary": "Counting, Roman numerals, decimal system, and place value" },
+        { "id": "history_of_computers", "slug": "history-of-computers", "title": "History of Computers", "contentFile": "history_of_computers.json", "summary": "From abacus to microprocessors and modern computing" },
+        { "id": "binary_system", "slug": "binary-system", "title": "Binary System", "contentFile": "binary_system.json", "summary": "Binary digits, conversions, bits & bytes, and logic gates" },
+        { "id": "algorithms", "slug": "algorithms", "title": "Algorithms", "contentFile": "algorithms.json", "summary": "What algorithms are, examples, and complexity basics" },
+        { "id": "functions", "slug": "functions", "title": "Functions", "contentFile": "functions.json", "summary": "Reusable code blocks, examples, and design tips" },
+        { "id": "scratch_basics", "slug": "scratch-basics", "title": "Scratch Basics", "contentFile": "scratch_basics.json", "summary": "Scratch concepts: sprites, stage, events, movement" },
+        { "id": "scratch_assignments", "slug": "scratch-assignments", "title": "Scratch Assignments", "contentFile": "scratch_assignments.json", "summary": "Practice projects to reinforce Scratch fundamentals" }
       ]
     },
     {
+      "id": "lec2",
+      "slug": "programming-basics",
       "title": "Lecture 2: Programming Basics",
+      "description": "Core programming constructs: variables, control flow, and simple data structures",
+      "tags": ["programming", "variables", "control-flow"],
+      "estimatedDuration": 60,
       "pages": []
     }
   ]
