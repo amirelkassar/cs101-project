@@ -5,30 +5,51 @@
       "type": "section",
       "title": "Why Scratch?",
       "content": [
-        { "type": "image", "imageKey": "scratch_blocks", "alt": "Scratch blocks", "caption": "Scratch uses snap-together blocks to build programs" },
-        { "type": "paragraph", "text": "Scratch is a visual programming language that lets you create interactive stories, games, and animations by snapping blocks together—no syntax errors!" }
+        {
+          "type": "image",
+          "imageKey": "scratch_blocks",
+          "alt": "Scratch blocks",
+          "caption": "Scratch uses snap-together blocks to build programs",
+          "optimized": true,
+          "scalePercent": 50
+        },
+        {
+          "type": "paragraph",
+          "text": "Scratch is a visual programming language that lets you create interactive stories, games, and animations by snapping blocks together—no syntax errors!"
+        }
       ]
     },
     {
       "type": "section",
       "title": "Core Concepts",
       "content": [
-        { "type": "list", "ordered": false, "items": [
-          "Sprites: characters or objects",
-          "Stage: the canvas where sprites live",
-          "Events: start actions (e.g., green flag clicked)",
-          "Control: loops and conditionals",
-          "Variables: store values like score or speed"
-        ] }
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Sprites: characters or objects",
+            "Stage: the canvas where sprites live",
+            "Events: start actions (e.g., green flag clicked)",
+            "Control: loops and conditionals",
+            "Variables: store values like score or speed"
+          ]
+        }
       ]
     },
     {
       "type": "section",
       "title": "Move a Sprite",
       "content": [
-        { "type": "example", "title": "Blocks", "content": [
-          { "type": "paragraph", "text": "When green flag clicked → forever → move 10 steps → if on edge, bounce" }
-        ] }
+        {
+          "type": "example",
+          "title": "Blocks",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "When green flag clicked → forever → move 10 steps → if on edge, bounce"
+            }
+          ]
+        }
       ]
     }
   ]

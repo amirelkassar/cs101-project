@@ -28,7 +28,9 @@
           "type": "image",
           "imageKey": "abacus",
           "alt": "Ancient abacus",
-          "caption": "The abacus: one of the earliest calculating devices, still used today"
+          "caption": "The abacus: one of the earliest calculating devices, still used today",
+          "optimized": true,
+          "scalePercent": 50
         },
         {
           "type": "paragraph",
@@ -160,7 +162,9 @@
           "type": "image",
           "imageKey": "eniac",
           "alt": "ENIAC computer",
-          "caption": "ENIAC (1946) - one of the first general-purpose electronic computers"
+          "caption": "ENIAC (1946) - one of the first general-purpose electronic computers",
+          "optimized": true,
+          "scalePercent": 50
         },
         {
           "type": "paragraph",
@@ -175,7 +179,9 @@
           "type": "image",
           "imageKey": "transistor_computer",
           "alt": "Transistor symbol",
-          "caption": "The transistor replaced vacuum tubes, making computers smaller and more reliable"
+          "caption": "The transistor replaced vacuum tubes, making computers smaller and more reliable",
+          "optimized": true,
+          "scalePercent": 50
         },
         {
           "type": "paragraph",
@@ -190,7 +196,9 @@
           "type": "image",
           "imageKey": "microprocessor",
           "alt": "Microprocessor chip",
-          "caption": "Modern microprocessors contain billions of transistors on a single chip"
+          "caption": "Modern microprocessors contain billions of transistors on a single chip",
+          "optimized": true,
+          "scalePercent": 50
         },
         {
           "type": "paragraph",
@@ -206,7 +214,9 @@
           "type": "image",
           "imageKey": "ipo_diagram",
           "alt": "Input-Processing-Output diagram",
-          "caption": "The IPO model: input → processing → output"
+          "caption": "The IPO model: input → processing → output",
+          "optimized": true,
+          "scalePercent": 50
         },
         {
           "type": "paragraph",

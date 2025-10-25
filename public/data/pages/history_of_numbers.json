@@ -5,30 +5,67 @@
       "type": "section",
       "title": "Counting and Early Number Systems",
       "content": [
-        { "type": "image", "imageKey": "tally_marks", "alt": "Tally marks", "caption": "Tally marks – one of the earliest counting methods" },
-        { "type": "paragraph", "text": "Humans began with simple counting using tally marks. Over time, different civilizations developed number systems to represent quantities and perform calculations." },
-        { "type": "paragraph", "text": "These systems evolved to support trade, astronomy, engineering, and science." }
+        {
+          "type": "image",
+          "imageKey": "tally_marks",
+          "alt": "Tally marks",
+          "caption": "Tally marks – one of the earliest counting methods",
+          "optimized": true,
+          "scalePercent": 50
+        },
+        {
+          "type": "paragraph",
+          "text": "Humans began with simple counting using tally marks. Over time, different civilizations developed number systems to represent quantities and perform calculations."
+        },
+        {
+          "type": "paragraph",
+          "text": "These systems evolved to support trade, astronomy, engineering, and science."
+        }
       ]
     },
     {
       "type": "section",
       "title": "Roman Numerals",
       "content": [
-        { "type": "image", "imageKey": "roman_numerals", "alt": "Roman numerals", "caption": "Roman numerals – useful but hard for complex calculations" },
-        { "type": "paragraph", "text": "The Roman numeral system uses letters (I, V, X, L, C, D, M). While it served well for labeling and simple arithmetic, it lacks place value and zero, making complex calculations difficult." }
+        {
+          "type": "image",
+          "imageKey": "roman_numerals",
+          "alt": "Roman numerals",
+          "caption": "Roman numerals – useful but hard for complex calculations",
+          "optimized": true,
+          "scalePercent": 50
+        },
+        {
+          "type": "paragraph",
+          "text": "The Roman numeral system uses letters (I, V, X, L, C, D, M). While it served well for labeling and simple arithmetic, it lacks place value and zero, making complex calculations difficult."
+        }
       ]
     },
     {
       "type": "section",
       "title": "Decimal System and Place Value",
       "content": [
-        { "type": "image", "imageKey": "decimal_place_value", "alt": "Decimal place value", "caption": "Place value system – foundation of modern arithmetic" },
-        { "type": "paragraph", "text": "The decimal (base-10) system with place value and the digit zero transformed mathematics. Each position represents a power of 10, making addition, subtraction, multiplication, and division systematic and efficient." },
-        { "type": "list", "ordered": false, "items": [
-          "Digits 0–9 combine to represent any number",
-          "Zero as a placeholder and number is essential",
-          "Place value enables efficient algorithms"
-        ] }
+        {
+          "type": "image",
+          "imageKey": "decimal_place_value",
+          "alt": "Decimal place value",
+          "caption": "Place value system – foundation of modern arithmetic",
+          "optimized": true,
+          "scalePercent": 50
+        },
+        {
+          "type": "paragraph",
+          "text": "The decimal (base-10) system with place value and the digit zero transformed mathematics. Each position represents a power of 10, making addition, subtraction, multiplication, and division systematic and efficient."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Digits 0–9 combine to represent any number",
+            "Zero as a placeholder and number is essential",
+            "Place value enables efficient algorithms"
+          ]
+        }
       ]
     },
     {
