@@ -1,0 +1,42 @@
+{
+  "title": "Scratch Assignments",
+  "sections": [
+    {
+      "type": "section",
+      "title": "Assignment 1: Move & Score",
+      "content": [
+        { "type": "paragraph", "text": "Build a simple project where you move a sprite with arrow keys and collect items to increase score." },
+        { "type": "list", "ordered": false, "items": [
+          "Use key press events (when key pressed)",
+          "Increase a score variable when touching the item",
+          "Respawn the item at a random position after collection",
+          "Display the score on the stage"
+        ] },
+        { "type": "example", "title": "Requirements", "content": [
+          { "type": "list", "ordered": false, "items": [
+            "Sprite movement with arrow keys",
+            "Score variable initialized to 0",
+            "Item respawns at random position",
+            "Game ends when score reaches 10"
+          ] }
+        ] }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Assignment 2: Chase Game",
+      "content": [
+        { "type": "paragraph", "text": "Create a chase game where the player avoids an enemy and survives for 30 seconds." },
+        { "type": "list", "ordered": false, "items": [
+          "Player sprite controlled by arrow keys or WASD",
+          "Enemy sprite follows the player using ",
+          "Timer counts down from 30 seconds",
+          "Play a sound or show a message when time is up or player is caught"
+        ] },
+        { "type": "example", "title": "Suggested Blocks", "content": [
+          { "type": "paragraph", "text": "When green flag clicked → set [timer] to 30 → forever: wait 1 sec, change [timer] by -1 → if touching [enemy] then stop all." }
+        ] }
+      ]
+    }
+  ]
+}

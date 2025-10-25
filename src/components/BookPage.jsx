@@ -54,7 +54,7 @@ export const CodeBlock = ({ children, language = 'text' }) => (
   </div>
 );
 
-export const ImageFigure = ({ src, alt, caption, scalePercent = 100, optimized = false }) => (
+export const ImageFigure = ({ src, alt, caption, scalePercent = 50, optimized = false }) => (
   <figure className="image-figure">
     <img 
       src={src} 

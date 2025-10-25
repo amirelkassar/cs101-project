@@ -51,8 +51,12 @@ function App() {
         return;
       }
       try {
-        const mod = await import(/* @vite-ignore */ `./data/pages/${currentPageData.contentFile}`);
-        setPageContent(mod.default || mod);
+        const res = await fetch(`/data/pages/${currentPageData.contentFile}`);
+        if (!res.ok) {
+          throw new Error(`Failed to fetch ${currentPageData.contentFile}: ${res.status}`);
+        }
+        const json = await res.json();
+        setPageContent(json);
       } catch (e) {
         console.error('Failed to load page content', e);
         setPageContent({ title: currentPageData.title, sections: [{ type: 'section', title: 'Error', content: [{ type: 'paragraph', text: 'Could not load content.' }] }] });
